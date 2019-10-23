@@ -1,0 +1,169 @@
+<!DOCTYPE html> <!-- Declara ser HTML versão 5 -->
+<html lang="pt-br">			<!-- Inicia ciclo de programação HTML -->
+	
+	<head> <!-- Inicia a parte dos títulos -->
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>PIXEL SORTING</title> <!-- título exibido no navegador -->
+		<link href="/style.css" rel="stylesheet" type="text/css" media="all"> <!-- importar css usando a tag linkhref-->
+		
+		<!-- <script script type="text/javascript" src="bubble_sort.js"></script> -->
+		<script script type="text/javascript" src="bubble_sort.js"></script>
+		<script script type="text/javascript" src="demo1.js"></script>
+		
+
+		
+		<style> 
+		
+		  fieldset {
+		    background: none;
+		    color: rgb(121, 119, 169);
+		    border: 0;
+		    text-align: center;
+		    margin: 0 auto;
+		  }
+		
+			form {
+			
+		    position: relative;
+		    color: black;
+		    /* Apenas para centralizar o form na página */
+		    /*display: inline-block;*/
+		    margin: 0 auto;
+		    width: 400px;
+		  
+		    /* Para ver as bordas do formulário */
+		    padding: 1em;
+		    border: 1px;
+		    border-radius: 1em;
+		    text-align: left;
+		  }
+		
+	    body, input, select, textarea, button {
+	      font-family: "ralewayregular";
+	      font-size: 2vw;
+	    }
+	  
+	    legend {
+	      color: black;
+	    }
+	  
+		  h1 {
+		    text-align:center;
+			  color:blue;
+			  font-family: verdana;
+			  font-size:10 vw;
+			}
+			
+		  p {
+			  color:red;
+			  font-family:courier;
+			  font-size: 3vw;
+			  text-align: left;
+			}
+			
+		  label {
+		    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente         alinhadas */
+        display: inline-block;
+        width: 500px;
+        text-align: left;
+		  }
+		
+		  input {
+        /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+        font: 1em sans-serif;
+
+        /* Para dar o mesmo tamanho a todos os campo de texto */
+        width: 300px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        /* Para harmonizar o look & feel das bordas nos campos de texto*/
+        border: 1px solid #999;
+      }
+    
+      input:focus {
+        /* Dar um pouco de destaque nos elementos ativos */
+        border-color: #D630CE;
+      }
+	 
+		  .header {
+		    margin: 0 auto;
+		  }
+			
+		  .center { 
+			  display: block; 
+			  margin-left: auto;
+			  margin-right: auto;
+			  width: 100%;
+		  }
+		
+		
+		  .campo label {
+		    margin-bottom: 1vw;
+		    background: none;
+		    color: black;
+		    display: inline;
+		    border: 0px solid white; 
+		    text-align: center;
+		  }
+	
+		
+
+		</style>
+		
+	</head> <!-- Fim da parte dos títulos -->
+	
+	<body> 
+	
+	  <div class="header">
+	    <h1><img src="titulo_self_sorting.png" class="center" style="width:70%"></h1>
+	  </div> 
+	  
+	  <p align="center"> 
+			Vamos organizar sua identidade virtual?
+		</p>
+		
+		<br/>
+	  
+	  <form action="/pagina-processa-dados-do-form" method="post" class="center" style="width:50%" name="usuario_twitter" id="usuario_twitter">
+	  
+		  <fieldset>
+		  
+		    <legend>Insira Nome de Usuário</legend>
+		  
+		    <!-- campos -->
+		    <div class="campo">
+		      <label for="nome">usuário do Twitter: </label>
+		      <input type="text" name="nome" id="nome" />
+		    </div>
+		    
+		    <br />
+		    
+		    <div class="button">
+		      <button type="button" name="submit" value="submit" onclick= "testeAlerta();"> Enviar </button>
+		    </div>
+		      
+		  </fieldset>
+		  
+  	</form>
+  	
+  	
+  	<br />
+  	<br />
+  	<br />
+	  
+    <canvas id="canvas" class="center" style="width:25%"></canvas>
+			
+		
+		
+		
+		<br />	
+		
+    <a href="galeria.html">
+      <img alt="Qries" src="link galeria.png" class="center" style="width:50%">
+    </a>
+	</body>
+
+</html>
+
