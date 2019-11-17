@@ -1,0 +1,140 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+   
+@font-face {
+    font-family: "ralewayregular";
+    src: url("raleway-regular-webfont.woff2") format('woff2'),
+         url("raleway-regular-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "press_start_2pregular";
+    src: url("pressstart2p-regular-webfont.woff2") format('woff2'),
+         url("pressstart2p-regular-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+fieldset {
+    background: none;
+    color: rgb(121, 119, 169);
+    border: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+    form {
+    
+    position: relative;
+    color: black;
+    /* Apenas para centralizar o form na página */
+    /*display: inline-block;*/
+    margin: 0 auto;
+    width: 400px;
+  
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px;
+    border-radius: 1em;
+    text-align: left;
+  }
+
+input, select, textarea, button {
+  font-family: "ralewayregular";
+  font-size: 2vw;
+}
+
+legend {
+  color: black;
+}
+
+  h1 {
+    text-align:center;
+      color:blue;
+      font-family: verdana;
+      font-size:10 vw;
+    }
+    
+  p {
+      color:red;
+      font-family:courier;
+      font-size: 3vw;
+      text-align: left;
+    }
+    
+  label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente         alinhadas */
+display: inline-block;
+width: 500px;
+text-align: left;
+  }
+
+  input {
+/* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+font: 1em sans-serif;
+
+/* Para dar o mesmo tamanho a todos os campo de texto */
+width: 300px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+
+/* Para harmonizar o look & feel das bordas nos campos de texto*/
+border: 1px solid #999;
+}
+
+input:focus {
+/* Dar um pouco de destaque nos elementos ativos */
+border-color: #D630CE;
+}
+
+  .header {
+    margin: 0 auto;
+  }
+    
+  .center { 
+      display: block; 
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+
+
+  .campo label {
+    /*margin-bottom: 1vw;*/
+    background: none;
+    color: black;
+    display: inline;
+    border: 0px solid white; 
+    text-align: center;
+  }
+
+body {
+    background-color: lightblue;
+    background-image: url("grade500.png");
+    color: black;
+    font-family: 'Courier New', sans-serif;
+ }
+		
+h1 {
+	text-align:center;
+	color:blue;
+	font-family: verdana;
+	font-size:10;
+}
+
+p {
+	color:red;
+	font-family:courier;
+	font-size: 5vw;
+}
+
+.center { 
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
