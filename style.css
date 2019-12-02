@@ -165,10 +165,16 @@ p {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  background:url("fechar_botao.png");
+  display: block; 
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  /* margin-left: 300px; */
+  /* margin: auto; */
   float: right;
-  font-size: 28px;
-  font-weight: bold;
 }
 
 .close:hover,
