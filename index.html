@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- Declara ser HTML versão 5 -->
+<html lang="pt-br">
+<!-- Inicia ciclo de programação HTML -->
+
+<head>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- draggable portion-->
+
+		<div id="myModalheader" class="modalHeader"> <!-- Click here to move--> </div>
+			
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<!-- <p>Some text in the Modal..</p> -->
+			<!-- <canvas id="canvas" class="center" style="width:25%"></canvas> -->
+			<canvas id="canvas"></canvas>
+		</div>
+
+	</div>
+
+	<!-- Inicia a parte dos títulos -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PIXEL SORTING</title> <!-- título exibido no navegador -->
+	<link href="style.css" rel="stylesheet" type="text/css" media="all"> <!-- importar css usando a tag linkhref-->
+
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script language="javascript" type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+	<script script type="text/javascript" src="demo4.js"></script>
+
+
+
+</head> <!-- Fim da parte dos títulos -->
+
+<body>
+
+	<div class="header">
+		<h1><img src="titulo_self_sorting.png" class="center" style="width:70%"></h1>
+	</div>
+
+	<p align="center">
+		Vamos organizar sua identidade virtual?
+	</p>
+
+	<br />
+
+	<form class="center" style="width:50%" name="usuario_twitter" id="usuario_twitter">
+
+		<fieldset>
+
+			<legend>Insira Nome de Usuário</legend>
+
+			<!-- campos -->
+			<div class="campo">
+				<label for="nome">usuário do Twitter: </label>
+				<input type="text" name="nome" id="nome" />
+			</div>
+
+			<br />
+
+			<div class="button">
+				<button type="button" name="submit" value="submit" onclick="processFormData();"> Enviar </button>
+			</div>
+
+		</fieldset>
+
+	</form>
+
+
+	<br />
+	<br />
+	<br />
+
+	
+
+
+
+
+	<br />
+
+	<div class="popup" onclick="myFunction()">Click me!
+		<span class="popuptext" id="myPopup">Popup text...</span>
+	</div>
+
+	<a href="galeria.html">
+		<img alt="Qries" src="link galeria.png" class="center" style="width:50%">
+	</a>
+
+
+</body>
+
+</html>
