@@ -1,47 +1,32 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
-   
+
 @font-face {
-    font-family: "ralewayregular";
-    src: url("raleway-regular-webfont.woff2") format('woff2'),
-         url("raleway-regular-webfont.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "ralewayregular";
+  src: url("raleway-regular-webfont.woff2") format('woff2'), url("raleway-regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "press_start_2pregular";
-    src: url("pressstart2p-regular-webfont.woff2") format('woff2'),
-         url("pressstart2p-regular-webfont.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "press_start_2pregular";
+  src: url("pressstart2p-regular-webfont.woff2") format('woff2'), url("pressstart2p-regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-fieldset {
-    background: none;
-    color: rgb(121, 119, 169);
-    border: 0;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-    form {
-    
-    position: relative;
-    color: black;
-    /* Apenas para centralizar o form na página */
-    /*display: inline-block;*/
-    margin: 0 auto;
-    width: 400px;
+form {
+  position: relative;
+  width  : 800px;
+  height : 498px;
+  margin : auto;
+  background: url(/Fundo/Computador.png);
+  background-position: 90px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
   
-    /* Para ver as bordas do formulário */
-    padding: 1em;
-    border: 1px;
-    border-radius: 1em;
-    text-align: left;
-  }
+}
 
 input, select, textarea, button {
   font-family: "ralewayregular";
@@ -52,122 +37,129 @@ legend {
   color: black;
 }
 
-  h1 {
-    text-align:center;
-      color:blue;
-      font-family: verdana;
-      font-size:10 vw;
-    }
-    
-  p {
-      color:red;
-      font-family:courier;
-      font-size: 3vw;
-      text-align: left;
-    }
-    
-  label {
-    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente         alinhadas */
-display: inline-block;
-width: 500px;
-text-align: left;
-  }
-
-  input {
-/* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
-font: 1em sans-serif;
-
-/* Para dar o mesmo tamanho a todos os campo de texto */
-width: 300px;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-
-/* Para harmonizar o look & feel das bordas nos campos de texto*/
-border: 1px solid #999;
-}
-
-input:focus {
-/* Dar um pouco de destaque nos elementos ativos */
-border-color: #D630CE;
-}
-
-  .header {
-    margin: 0 auto;
-  }
-    
-  .center { 
-      display: block; 
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-  }
-
-
-  .campo label {
-    /*margin-bottom: 1vw;*/
-    background: none;
-    color: black;
-    display: inline;
-    border: 0px solid white; 
-    text-align: center;
-  }
-
-body {
-    background-color: lightblue;
-    background-image: url("grade500.png");
-    color: black;
-    font-family: 'Courier New', sans-serif;
- }
-		
 h1 {
-	text-align:center;
-	color:blue;
-	font-family: verdana;
-	font-size:10;
+  text-align: center;
+  color: blue;
+  font-family: verdana;
+  font-size: 10 vw;
 }
 
 p {
-	color:red;
-	font-family:courier;
-	font-size: 5vw;
+  color: red;
+  font-family: courier;
+  font-size: 3vw;
+  text-align: left;
 }
 
-.center { 
-	display: block; 
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
+label {
+  /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente         alinhadas */
+  display: inline-block;
+  width: 500px;
+  text-align: left;
+}
+
+input {
+  /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+  font: 1em sans-serif;
+  width: 240px;
+  height: 24px;
+  /* Para harmonizar o look & feel das bordas nos campos de texto*/
+  border: none;
+  background-color: transparent;
+}
+
+input:focus {
+  /* Dar um pouco de destaque nos elementos ativos */
+  border-color: #D630CE;
+  outline: none;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.campo {
+  position: relative;
+  background: none;
+  border: 0px solid white;
+  text-align: center;
+  top: 134px;
+  left: -30px;
+  
+}
+
+body {
+  background-color: lightblue;
+  background-image: url("grade500.png");
+  color: black;
+  font-family: 'Courier New', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  font-family: verdana;
+  font-size: 10;
+}
+
+p {
+  color: red;
+  font-family: courier;
+  font-size: 5vw;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /* The Modal (background) */
+
 .modal {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
+  display: none;
+  /* Hidden by default */
+  position: absolute;
+  /* Stay in place */
   /*padding-top: 100px; /* Location of the box */
   /* left: 0; */
   /* top: 0; */
-  z-index: 1; /* Sit on top */
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; /* Enable scroll if needed */
+  z-index: 1;
+  /* Sit on top */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
   /* margin: auto; */
 }
 
 /* Modal Content */
+
 .modal-content {
   background-image: url(/Imagens/3_SortingBaixo.png);
   background-size: 509px 519px;
   background-repeat: no-repeat;
-  width: 509px; /*509px; 31.67062549485352%*/
-  height: 519px;/*519px;*/
-  margin: auto; 
+  width: 509px;
+  /*509px; 31.67062549485352%*/
+  height: 519px;
+  /*519px;*/
+  margin: auto;
 }
 
 /* The Close Button */
+
 .close {
   /* background:url(/Imagens/Botao_Fechar.png); */
   position: relative;
-  display: block; 
+  display: block;
   /* background-size: 20px 17px; */
   /* background-color: black; */
   width: 20px;
@@ -175,14 +167,13 @@ p {
   background-repeat: no-repeat;
   z-index: 3;
   /* margin-left: 300px; */
-  left: 481px; 
+  left: 481px;
   top: 5px;
   /* float: right; */
   /* opacity: 0.5; */
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -211,24 +202,29 @@ p {
   top: 1px;
 }
 
-
-
-
 /* Contato (background) */
+
 .ImgContato {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
+  display: none;
+  /* Hidden by default */
+  position: absolute;
+  /* Stay in place */
   /*padding-top: 100px; /* Location of the box */
   /* left: 0; */
   /* top: 0; */
-  z-index: 1; /* Sit on top */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  z-index: 1;
+  /* Sit on top */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
   /* margin: auto; */
 }
 
 /* Contato Content */
+
 .conteudoContato {
   background-image: url(/Imagens/7_ContatoBaixo.png);
   background-size: contain;
@@ -239,9 +235,10 @@ p {
 }
 
 /* Contato Fechar Botão */
+
 .fecharContato {
-  background:url(/Imagens/Botao_Fechar.png);
-  display: block; 
+  background: url(/Imagens/Botao_Fechar.png);
+  display: block;
   width: 25px;
   height: 25px;
   background-size: contain;
@@ -252,8 +249,7 @@ p {
   float: right;
 }
 
-.fecharContato:hover,
-.fecharContato:focus {
+.fecharContato:hover, .fecharContato:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -272,50 +268,54 @@ p {
   margin: auto;
 }
 
-
-
-
 /* Original (background) */
+
 .ImgOriginal {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
+  display: none;
+  /* Hidden by default */
+  position: absolute;
+  /* Stay in place */
   /*padding-top: 100px; /* Location of the box */
   /* left: 0; */
   /* top: 0; */
-  z-index: 1; /* Sit on top */
-  width: 436px; 
-  height: 1922px; 
-  overflow: auto; /* Enable scroll if needed */
+  z-index: 1;
+  /* Sit on top */
+  width: 436px;
+  height: 1922px;
+  overflow: auto;
+  /* Enable scroll if needed */
   /* margin: auto; */
 }
 
 /* Original Content */
+
 .conteudoOriginal {
   background-image: url(/Imagens/4_ImgOriginalBaixo.png);
   background-size: 436px 431px;
   background-repeat: no-repeat;
-  width: 436; /* 0,2440512507626602 */
+  width: 436;
+  /* 0,2440512507626602 */
   height: 431px;
-  margin: auto; 
+  margin: auto;
 }
 
 /* Original Fechar Botão */
+
 .fecharOriginal {
-  background:url(/Imagens/Botao_Fechar.png);
-  display: block; 
+  background: url(/Imagens/Botao_Fechar.png);
+  display: block;
   width: 25px;
   height: 25px;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 3;
-  margin-right: 11px; 
+  margin-right: 11px;
   margin-top: 10px;
   /* margin: auto; */
   float: right;
 }
 
-.fecharOriginal:hover,
-.fecharOriginal:focus {
+.fecharOriginal:hover, .fecharOriginal:focus {
   opacity: 0.5;
   text-decoration: none;
   cursor: pointer;
@@ -327,7 +327,7 @@ p {
   background-image: url(/Imagens/4_ImgOriginalCima.png);
   background-size: 436px 38px;
   background-repeat: no-repeat;
-  position:relative;
+  position: relative;
   cursor: move;
   z-index: 2;
   width: 436px;
