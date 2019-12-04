@@ -9,10 +9,11 @@
 
 		<!-- draggable portion-->
 
-		<div id="myModalheader" class="modalHeader"> <!-- Click here to move--> 
+		<div id="myModalheader" class="modalHeader">
+			<!-- Click here to move-->
 			<span class="close"></span>
 		</div>
-			
+
 		<!-- Modal content -->
 		<div class="modal-content">
 			<!-- <span class="close">&times;</span> -->
@@ -21,6 +22,42 @@
 		</div>
 
 	</div>
+	<!-- Fim Modal -->
+
+	<!-- POPUP ORIGINAL -->
+	<div id="Original" class="ImgOriginal">
+
+		<!-- draggable portion-->
+
+		<div id="OriginalHeader" class="classOriginalHeader">
+			<!-- Click here to move-->
+			<span class="fecharOriginal"></span>
+		</div>
+
+		<!-- Modal content -->
+		<div class="conteudoOriginal">
+			<canvas id="original"></canvas>
+		</div>
+
+	</div>
+	<!-- Fim POPUP ORIGINAL -->
+
+	<!-- POPUP CONTATO -->
+	<div id="Contato" class="ImgContato">
+
+		<!-- draggable portion-->
+
+		<div id="meuContatoHeader" class="ContatoHeader">
+			<!-- Click here to move-->
+			<span class="fecharContato"></span>
+		</div>
+
+		<!-- Modal content -->
+		<div class="conteudoContato">
+		</div>
+
+	</div>
+	<!-- Fim POPUP CONTATO -->
 
 	<!-- Inicia a parte dos títulos -->
 	<meta charset="utf-8">
@@ -33,7 +70,7 @@
 	<script language="javascript" type="text/javascript"
 		src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
 	<script script type="text/javascript" src="demo4.js"></script>
-
+	<!-- <script script type="text/javascript" src="OriginalPopUp.js"></script> -->
 
 
 </head> <!-- Fim da parte dos títulos -->
@@ -66,6 +103,7 @@
 
 			<div class="button">
 				<button type="button" name="submit" value="submit" onclick="processFormData();"> Enviar </button>
+				<!-- <button type="button" name="submit" value="submit" onclick="abrePopUp();"> Enviar </button> -->
 			</div>
 
 		</fieldset>
@@ -77,16 +115,18 @@
 	<br />
 	<br />
 
-	
+
 
 
 
 
 	<br />
-
-	<div class="popup" onclick="myFunction()">Click me!
-		<span class="popuptext" id="myPopup">Popup text...</span>
-	</div>
+	<!--ICONE GALERIA-->
+	<img class="iconGaleria" src="\Imagens\1_IconeGaleria.png" onClick="openGaleria();" />
+	<!--ICONE SOBRE-->
+	<img class="iconSobre" src="\Imagens\1_IconeSobre.png" onClick="openSobre();" />
+	<!--ICONE CONTATO-->
+	<img class="iconContato" src="\Imagens\1_IconeContato.png" onClick="openContato();" />
 
 	<a href="galeria.html">
 		<img alt="Qries" src="link galeria.png" class="center" style="width:50%">

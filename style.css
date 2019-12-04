@@ -147,34 +147,38 @@ p {
   /* left: 0; */
   /* top: 0; */
   z-index: 1; /* Sit on top */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%; 
+  height: 100%; 
   overflow: auto; /* Enable scroll if needed */
   /* margin: auto; */
 }
 
 /* Modal Content */
 .modal-content {
-  background-image: url("janela.jpg");
-  background-size: contain;
+  background-image: url(/Imagens/3_SortingBaixo.png);
+  background-size: 509px 519px;
   background-repeat: no-repeat;
-  width: 510px;
-  height: 448px;
-  margin: auto;
+  width: 509px; /*509px; 31.67062549485352%*/
+  height: 519px;/*519px;*/
+  margin: auto; 
 }
 
 /* The Close Button */
 .close {
-  background:url("fechar_botao.png");
+  /* background:url(/Imagens/Botao_Fechar.png); */
+  position: relative;
   display: block; 
-  width: 25px;
-  height: 25px;
-  background-size: contain;
+  /* background-size: 20px 17px; */
+  /* background-color: black; */
+  width: 20px;
+  height: 17px;
   background-repeat: no-repeat;
   z-index: 3;
   /* margin-left: 300px; */
-  /* margin: auto; */
-  float: right;
+  left: 481px; 
+  top: 5px;
+  /* float: right; */
+  /* opacity: 0.5; */
 }
 
 .close:hover,
@@ -187,12 +191,156 @@ p {
 /* draggable portion */
 
 .modalHeader {
-  background-image: url("barra_superior.png");
+  background-image: url(/Imagens/3_SortingCima.png);
+  background-size: 509px 53px;
+  background-repeat: no-repeat;
+  padding-bottom: 0px;
+  cursor: move;
+  z-index: 2;
+  width: 509px;
+  height: 53px;
+  margin: auto;
+}
+
+#canvas {
+  position: relative;
+  z-index: 0;
+  width: 400px;
+  height: 398px;
+  left: 80px;
+  top: 1px;
+}
+
+
+
+
+/* Contato (background) */
+.ImgContato {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  /*padding-top: 100px; /* Location of the box */
+  /* left: 0; */
+  /* top: 0; */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* margin: auto; */
+}
+
+/* Contato Content */
+.conteudoContato {
+  background-image: url(/Imagens/7_ContatoBaixo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 510px;
+  height: 448px;
+  margin: auto;
+}
+
+/* Contato Fechar Botão */
+.fecharContato {
+  background:url(/Imagens/Botao_Fechar.png);
+  display: block; 
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  /* margin-left: 300px; */
+  /* margin: auto; */
+  float: right;
+}
+
+.fecharContato:hover,
+.fecharContato:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Contato draggable portion */
+
+.ContatoHeader {
+  background-image: url(/Imagens/7_ContatoCima.png);
   background-size: contain;
   background-repeat: no-repeat;
   cursor: move;
   z-index: 2;
-  width: 509px;
-  height: 32px;
+  width: 2988px;
+  height: 155px;
   margin: auto;
+}
+
+
+
+
+/* Original (background) */
+.ImgOriginal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  /*padding-top: 100px; /* Location of the box */
+  /* left: 0; */
+  /* top: 0; */
+  z-index: 1; /* Sit on top */
+  width: 436px; 
+  height: 1922px; 
+  overflow: auto; /* Enable scroll if needed */
+  /* margin: auto; */
+}
+
+/* Original Content */
+.conteudoOriginal {
+  background-image: url(/Imagens/4_ImgOriginalBaixo.png);
+  background-size: 436px 431px;
+  background-repeat: no-repeat;
+  width: 436; /* 0,2440512507626602 */
+  height: 431px;
+  margin: auto; 
+}
+
+/* Original Fechar Botão */
+.fecharOriginal {
+  background:url(/Imagens/Botao_Fechar.png);
+  display: block; 
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  /* margin-left: 300px; */
+  /* margin: auto; */
+  float: right;
+}
+
+.fecharOriginal:hover,
+.fecharOriginal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Contato draggable portion */
+
+.classOriginalHeader {
+  background-image: url(/Imagens/4_ImgOriginalCima.png);
+  background-size: 436px 38px;
+  background-repeat: no-repeat;
+  position:relative;
+  cursor: move;
+  z-index: 2;
+  width: 436px;
+  height: 38px;
+  margin: auto;
+  left: 0px;
+  padding-bottom: 0px;
+}
+
+#original {
+  position: relative;
+  z-index: 0;
+  width: 397px;
+  height: 397px;
+  left: 18px;
+  top: 15px;
 }
