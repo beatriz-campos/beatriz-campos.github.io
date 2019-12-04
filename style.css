@@ -308,14 +308,15 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 3;
-  /* margin-left: 300px; */
+  margin-right: 11px; 
+  margin-top: 10px;
   /* margin: auto; */
   float: right;
 }
 
 .fecharOriginal:hover,
 .fecharOriginal:focus {
-  color: #000;
+  opacity: 0.5;
   text-decoration: none;
   cursor: pointer;
 }
@@ -332,8 +333,6 @@ p {
   width: 436px;
   height: 38px;
   margin: auto;
-  left: 0px;
-  padding-bottom: 0px;
 }
 
 #original {
