@@ -33,6 +33,25 @@ input, select, textarea, button {
   font-size: 2vw;
 }
 
+button {
+  position: relative;
+  background: url(/Imagens/BotaoEnviar.png);
+  background-size: contain;
+  width: 24px;
+  height: 23px;
+  left: 490px;
+  top: 108px;
+}
+
+button:focus{
+  outline:none;
+}
+
+button:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
 legend {
   color: black;
 }
@@ -69,9 +88,19 @@ input {
 }
 
 input:focus {
-  /* Dar um pouco de destaque nos elementos ativos */
-  border-color: #D630CE;
   outline: none;
+}
+
+@-webkit-keyframes autofill {
+  to {
+      color: #666;
+      background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
 }
 
 .header {
@@ -91,13 +120,12 @@ input:focus {
   border: 0px solid white;
   text-align: center;
   top: 134px;
-  left: -30px;
-  
+  left: -28px;
 }
 
 body {
   background-color: lightblue;
-  background-image: url("grade500.png");
+  background-image: url(/Fundo/grade500.png);
   color: black;
   font-family: 'Courier New', sans-serif;
 }
@@ -272,19 +300,11 @@ p {
 
 .ImgOriginal {
   display: none;
-  /* Hidden by default */
   position: absolute;
-  /* Stay in place */
-  /*padding-top: 100px; /* Location of the box */
-  /* left: 0; */
-  /* top: 0; */
   z-index: 1;
-  /* Sit on top */
   width: 436px;
-  height: 1922px;
+  height: 469px;
   overflow: auto;
-  /* Enable scroll if needed */
-  /* margin: auto; */
 }
 
 /* Original Content */
@@ -302,21 +322,20 @@ p {
 /* Original Fechar Botão */
 
 .fecharOriginal {
-  background: url(/Imagens/Botao_Fechar.png);
   display: block;
-  width: 25px;
-  height: 25px;
-  background-size: contain;
+  width: 18px;
+  height: 20px;
+  background-size: 18px 22px;
   background-repeat: no-repeat;
   z-index: 3;
-  margin-right: 11px;
-  margin-top: 10px;
+  margin-right: 7px;
+  margin-top: 12px;
   /* margin: auto; */
   float: right;
 }
 
 .fecharOriginal:hover, .fecharOriginal:focus {
-  opacity: 0.5;
+  opacity: 0.0;
   text-decoration: none;
   cursor: pointer;
 }
@@ -342,4 +361,81 @@ p {
   height: 397px;
   left: 18px;
   top: 15px;
+}
+
+.iconGaleria {
+  position: absolute;
+  width: 3%;
+  height: 3%;
+  left: 278px;
+  top: 255px;
+}
+
+.iconSobre{
+  position: absolute;
+  width: 4.2%;
+  height: 4.2%;
+  left: 310px;
+  top: 255px;
+}
+
+.iconContato{
+  position: absolute;
+  width: 3.5%;
+  height: 3.5%;
+  left: 350px;
+  top: 255px;
+}
+
+.SobreClass {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: px;
+  height: 1922px;
+  overflow: auto;
+}
+
+.conteudoSobre {
+  background-image: url(/Imagens/6_SobreBaixo.png);
+  background-size: 436px 431px;
+  background-repeat: no-repeat;
+  width: 436;
+  /* 0,2440512507626602 */
+  height: 431px;
+  margin: auto;
+}
+
+.fecharSobre {
+  background: url(/Imagens/Botao_Fechar.png);
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 3;
+  margin-right: 11px;
+  margin-top: 10px;
+  /* margin: auto; */
+  float: right;
+}
+
+.fecharSobre:hover, .fecharOriginal:focus {
+  opacity: 0.5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Contato draggable portion */
+
+.classOriginalHeader {
+  background-image: url(/Imagens/6_SobreCima.png);
+  background-size: 436px 38px;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: move;
+  z-index: 2;
+  width: 436px;
+  height: 38px;
+  margin: auto;
 }

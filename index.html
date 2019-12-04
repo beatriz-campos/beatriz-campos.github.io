@@ -59,18 +59,35 @@
 	</div>
 	<!-- Fim POPUP CONTATO -->
 
+	<!-- POPUP SOBRE -->
+	<div id="Sobre" class="SobreClass">
+
+			<!-- draggable portion-->
+	
+			<div id="SobreHeader" class="ClasseSobreHeader">
+				<!-- Click here to move-->
+				<span class="fecharSobre"></span>
+			</div>
+	
+			<!-- Modal content -->
+			<div class="conteudoSobre">
+			</div>
+	
+		</div>
+		<!-- Fim POPUP SOBRE -->
+
 	<!-- Inicia a parte dos títulos -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PIXEL SORTING</title> <!-- título exibido no navegador -->
 	<link href="style.css" rel="stylesheet" type="text/css" media="all"> <!-- importar css usando a tag linkhref-->
-
+		
 
 	<script src="jquery-3.4.1.min.js"></script>
 	<script language="javascript" type="text/javascript"
 		src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
 	<script script type="text/javascript" src="demo4.js"></script>
-	<!-- <script script type="text/javascript" src="OriginalPopUp.js"></script> -->
+	<script script type="text/javascript" src="SobrePopUp.js"></script>
 
 
 </head> <!-- Fim da parte dos títulos -->
@@ -87,41 +104,30 @@
 
 	<form class="formulario" name="usuario_twitter" id="usuario_twitter">
 
-			<!-- <legend>Insira Nome de Usuário</legend> -->
+		<!-- <legend>Insira Nome de Usuário</legend> -->
 
-			<!-- campos -->
-			<div class="campo">
-				<!-- <label for="nome">usuário do Twitter: </label> -->
-				<input type="text" name="nome" id="nome" />
-			</div>
+		<!-- campos -->
+		<div class="campo">
+			<!-- <label for="nome">usuário do Twitter: </label> -->
+			<input type="text" name="nome" id="nome" />
+		</div>
 
-			<div class="button">
-				<button type="button" name="submit" value="submit" onclick="processFormData();"> Enviar </button>
-				<!-- <button type="button" name="submit" value="submit" onclick="abrePopUp();"> Enviar </button> -->
-			</div>
-			 		
+		<div class="button">
+			<button type="button" class="botaoEnvio" name="submit" value="submit" onclick="processFormData();"></button>
+			<!-- <button type="button" name="submit" value="submit" onclick="abrePopUp();"> Enviar </button> -->
+		</div>
+
+		<!--ICONE GALERIA-->
+		<img class="iconGaleria" src="\Imagens\1_IconeGaleria.png" onClick="openGaleria();" />
+		<!--ICONE SOBRE-->
+		<img class="iconSobre" src="\Imagens\1_IconeSobre.png" onClick="openSobre();" />
+		<!--ICONE CONTATO-->
+		<img class="iconContato" src="\Imagens\1_IconeContato.png" onClick="openContato();" />
+
 
 	</form>
 
-	<!-- FIM DO FORMULÁRIO--> 
-
-
-	<br />
-	<br />
-	<br />
-
-
-
-
-
-
-	<br />
-	<!--ICONE GALERIA-->
-	<img class="iconGaleria" src="\Imagens\1_IconeGaleria.png" onClick="openGaleria();" />
-	<!--ICONE SOBRE-->
-	<img class="iconSobre" src="\Imagens\1_IconeSobre.png" onClick="openSobre();" />
-	<!--ICONE CONTATO-->
-	<img class="iconContato" src="\Imagens\1_IconeContato.png" onClick="openContato();" />
+	<!-- FIM DO FORMULÁRIO-->
 
 
 </body>

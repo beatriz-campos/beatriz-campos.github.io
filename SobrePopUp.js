@@ -1,34 +1,27 @@
 // Get the modal
-var modal = document.getElementById("myModal");
+var sobre = document.getElementById("Sobre");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var fecharSobre = document.getElementsByClassName("fecharSobre")[0];
 
 // When the user clicks the button, open the modal 
-var abrePopUp = function() {
-  modal.style.display = "block";
+var openSobre = function() {
+  sobre.style.display = "block";
 };
 
 // // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+fecharSobre.onclick = function () {
+  sobre.style.display = "none";
 }
 
 // Make the DIV element draggable:
-dragElement(document.getElementById("myModal"));
+dragElement(document.getElementById("Sobre"));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
+  if (document.getElementById(elmnt.id + "Header")) {
     // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    document.getElementById(elmnt.id + "Header").onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
