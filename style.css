@@ -387,27 +387,35 @@ p {
   top: 255px;
 }
 
+
+
+
+
+/* SOBRE */
+
 .SobreClass {
   display: none;
   position: absolute;
   z-index: 1;
   width: px;
-  height: 1922px;
+  height: 500px;
+  width: 575px;
   overflow: auto;
 }
 
 .conteudoSobre {
+  position: relative;
   background-image: url(/Imagens/6_SobreBaixo.png);
-  background-size: 436px 431px;
+  background-size: 575px 442px;
   background-repeat: no-repeat;
-  width: 436;
+  width: 575px;
   /* 0,2440512507626602 */
-  height: 431px;
+  height: 442px;
   margin: auto;
+  top: 40px;
 }
 
 .fecharSobre {
-  background: url(/Imagens/Botao_Fechar.png);
   display: block;
   width: 25px;
   height: 25px;
@@ -426,16 +434,17 @@ p {
   cursor: pointer;
 }
 
-/* Contato draggable portion */
+/* SOBRE draggable portion */
 
-.classOriginalHeader {
+.ClasseSobreHeader {
   background-image: url(/Imagens/6_SobreCima.png);
-  background-size: 436px 38px;
+  background-size: 575px 39px;
   background-repeat: no-repeat;
   position: relative;
   cursor: move;
   z-index: 2;
-  width: 436px;
-  height: 38px;
-  margin: auto;
+  width: 575px;
+  height: 39px;
+  float: left;
+  top: 3px;
 }
